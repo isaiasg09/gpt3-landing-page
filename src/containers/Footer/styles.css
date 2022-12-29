@@ -1,0 +1,182 @@
+.gpt3__footer {
+  background: var(--color-footer);
+
+  padding: 175px 0 27px 0;
+  text-align: center;
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.gpt3__footer span {
+  font-size: 12px;
+  line-height: 14px;
+  font-family: "Gilroy-Medium";
+  font-feature-settings: "liga" off;
+}
+
+.gpt3__footer-heading {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 821px;
+  margin-bottom: 180px;
+}
+
+.gpt3__footer-heading h1 {
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  margin-bottom: 4rem;
+}
+
+.gpt3__footer-heading button {
+  margin: 0 auto;
+  width: 218px;
+  height: 65px;
+  font-family: "Gilroy-Regular";
+  font-size: 18px;
+  line-height: 21px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background: linear-gradient(to left, transparent 50%, white 50%) right;
+  background-size: 200% 100%;
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -ms-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+}
+.gpt3__footer-heading button:hover {
+  background-position: left;
+  color: black;
+}
+.gpt3__footer-heading button:active {
+  background-position: -100%;
+  color: #ffffff;
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+}
+
+.gpt3__footer-content {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-bottom: 57px;
+}
+
+.gpt3__footer-content-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  max-width: 168px;
+  text-align: left;
+  margin-right: 237px;
+}
+
+.gpt3__footer-content-logo img {
+  height: 30px;
+}
+
+.gpt3__footer-content-logo p {
+  text-align: left;
+  font-family: "Gilroy-Medium";
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.gpt3__footer-content-list {
+  display: flex;
+  flex-direction: column;
+  margin-right: 160px;
+  text-align: left;
+}
+
+.gpt3__footer-content-list h3 {
+  margin-bottom: 36px;
+  font-family: "Gilroy-Bold";
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.gpt3__footer-content-list a {
+  font-family: "Gilroy-Medium";
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 26px;
+}
+
+.gpt3__footer-content-list:last-child {
+  margin: 0;
+}
+
+@media screen and (max-width: 990px) {
+  .gpt3__footer-content-logo {
+    margin-right: 77px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .gpt3__footer-heading h1 {
+    font-size: 50px;
+  }
+
+  .gpt3__footer-content-list {
+    margin-right: 77px;
+  }
+  .gpt3__footer-content-list h3 {
+    font-size: 12px;
+  }
+  .gpt3__footer-content-list a {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .gpt3__footer-heading h1 {
+    font-size: 40px;
+  }
+
+  .gpt3__footer-content {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gpt3__footer-content-logo {
+    margin: 0;
+    align-items: center;
+  }
+  .gpt3__footer-content-logo p {
+    text-align: center;
+  }
+
+  .gpt3__footer-content-list {
+    margin: 0;
+    text-align: center;
+  }
+  .gpt3__footer-content-list h3 {
+    font-size: 14px;
+  }
+  .gpt3__footer-content-list a {
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (max-width: 560px) {
+  .gpt3__footer-heading h1 {
+    font-size: 30px;
+  }
+  .gpt3__footer-heading button {
+    width: 185px;
+    height: 60px;
+  }
+}

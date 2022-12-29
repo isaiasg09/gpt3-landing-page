@@ -1,0 +1,240 @@
+.gpt3__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+
+  color: white;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.gpt3__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.gpt3__navbar-links_logo {
+  margin-right: 4rem;
+}
+
+.gpt3__navbar-links_logo img {
+  width: 80px;
+  height: 32px;
+}
+
+.gpt3__navbar-links_logo img:hover {
+  animation: shake 2s ease infinite;
+  -webkit-animation: shake 2s ease infinite;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+  }
+}
+
+.gpt3__navbar-links_container {
+  display: flex;
+  gap: 34px;
+  transition: 0.2s;
+}
+.gpt3__navbar-links_container a {
+  transition: 0.2s;
+}
+.gpt3__navbar-links_container a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.gpt3__navbar-links_container a:active {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+
+.gpt3__navbar-sign {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 26px;
+}
+
+.gpt3__navbar-sign button {
+  color: white;
+  font-size: 18px;
+}
+
+.btn_secondary {
+  background: none;
+  transition: 0.2s;
+}
+.btn_secondary:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.btn_secondary:active {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+
+.btn_primary {
+  width: 9rem;
+  height: 3.5rem;
+
+  background: #ff4820;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.btn_primary:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.btn_primary:active {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+
+.gpt3__navbar-menu {
+  display: none;
+}
+
+.gpt3__navbar-menu_container-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+
+  text-align: end;
+  background: var(--color-footer);
+  position: absolute;
+  top: 40px;
+  right: 0;
+  margin-top: 1rem;
+  min-width: 190px;
+  border-radius: 5px;
+  box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+.gpt3__navbar-menu_container-links a {
+  display: inline-block;
+  width: 190px;
+  line-height: 50px;
+  padding: 0 1rem;
+  transition: 0.2s;
+}
+.gpt3__navbar-menu_container a:hover {
+  background: var(--color-blog);
+}
+.gpt3__navbar-menu_container a:active {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}
+
+.gpt3__navbar-menu_container-links-sign {
+  display: flex;
+  flex-direction: row;
+  width: 190px;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.gpt3__navbar-menu_container-links-sign button {
+  color: white;
+  transition: 0.2s;
+  font-size: 15px;
+}
+.gpt3__navbar-menu_container-links-sign button:active {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}
+
+.btn_secondary-menu {
+  background: none;
+  width: 90px;
+  height: 40px;
+}
+.btn_secondary-menu:hover {
+  text-decoration: underline;
+}
+
+.btn_primary-menu {
+  background: #ff4820;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+}
+.btn_primary-menu:hover {
+  filter: brightness(1.3);
+  -webkit-filter: brightness(1.3);
+}
+
+@media screen and (max-width: 1130px) {
+  .gpt3__navbar {
+    padding: 2rem 2rem;
+  }
+
+  .gpt3__navbar-links_logo {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .gpt3__navbar {
+    padding: 2rem 2rem 0;
+  }
+  
+  .gpt3__navbar-menu {
+    display: flex;
+  }
+
+  .gpt3__navbar-links_container {
+    display: none;
+  }
+
+  .gpt3__navbar-sign {
+    display: none;
+  }
+}
